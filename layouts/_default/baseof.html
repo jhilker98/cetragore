@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{.Language.Lang}}"
+      x-data="{darkMode: false}"
+      x-init="darkMode = JSON.parse(localStorage.getItem('darkMode')); $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))"
+      :class="{'dark': darkMode === true}">
+    {{- partialCached "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <main class="prose prose-base prose-stone p-3 !max-w-none  font-oswald dark:prose-invert">
+        {{- block "main" . }}{{- end }}
+        </main>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

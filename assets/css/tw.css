@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap");
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/components';
+
+@layer base {
+    body {
+        @apply min-h-screen antialiased bg-zinc-100 dark:bg-cetblack-800;
+    }
+}
