@@ -1,3 +1,32 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'We Are Cetragore'
+
+[build]
+writeStats = true ## Used for Tailwind's JIT mode
+##
+
+# Menu Links
+[[menus.main]]
+identifier = "home"
+url = "/"
+name = "Home"
+weight = 1
+
+
+
+# Social Media Links
+[[params.socials]]
+url = "https://www.facebook.com/CETRAGORE"
+name = "Facebook"
+icon = "fab fa-facebook"
+
+[[params.socials]]
+url = "https://twitter.com/cetragore"
+name = "Twitter"
+icon = "fab fa-twitter"
+
+[[params.socials]]
+url = "#"
+name = "Instagram"
+icon = "fab fa-instagram"

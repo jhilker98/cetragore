@@ -1,1 +1,4 @@
 node_modules
+stdin
+/resources/
+/.hugo_build.lock
