@@ -27,6 +27,6 @@ name = "Twitter"
 icon = "fab fa-twitter"
 
 [[params.socials]]
-url = "#"
+url = "https://instagram.com/cetragore"
 name = "Instagram"
 icon = "fab fa-instagram"
