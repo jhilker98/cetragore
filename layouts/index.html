@@ -1,13 +1,13 @@
 {{define "main"}}
 <div class="h-[85vh] grid place-items-center">
     <!-- Card -->
-    <div class="bg-white dark:bg-black rounded shadow-md w-2/4 duration-75 transform hover:-translate-y-1 hover:shadow-lg motion-reduce:duration-0">
+    <div class="bg-white dark:bg-black rounded shadow-md w-3/4 duration-75 transform hover:-translate-y-1 hover:shadow-lg motion-reduce:duration-0">
     <!-- Mobile Banners, Light and Dark -->
         <img src="{{.Params.banner_light}}" alt="{{.Params.banner_alt}}" class="my-0 lg:hidden dark:hidden object-contain w-96 mx-auto"/>
         <img src="{{.Params.banner_dark}}" alt="{{.Params.banner_alt}}" class="my-0 lg:hidden hidden dark:block dark:lg:hidden object-contain w-96 mx-auto"/>
         <!-- Content -->
          <div class="lg:flex mb-2">
-            <div class="mx-2 p-2 break-word">
+            <div class="mx-2 p-1 break-word">
                 <h1 class="lg:mt-1">{{.Title}}</h1>
                 {{.Content}}
             </div>
