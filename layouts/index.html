@@ -1,35 +1,6 @@
 {{define "main"}}
 <div class="h-[85vh] grid place-items-center">
-    <!-- Card -->
-    <div class="bg-white dark:bg-black rounded shadow-md w-3/4 duration-75 transform hover:-translate-y-1 hover:shadow-lg motion-reduce:duration-0">
-    <!-- Mobile Banners, Light and Dark -->
-        <img src="{{.Params.banner_light}}" alt="{{.Params.banner_alt}}" class="my-0 lg:hidden dark:hidden object-contain w-96 mx-auto"/>
-        <img src="{{.Params.banner_dark}}" alt="{{.Params.banner_alt}}" class="my-0 lg:hidden hidden dark:block dark:lg:hidden object-contain w-96 mx-auto"/>
-        <!-- Content -->
-         <div class="lg:flex mb-2">
-            <div class="mx-2 p-1 break-word">
-                <h1 class="lg:mt-1">{{.Title}}</h1>
-                {{.Content}}
-            </div>
-            <!-- Desktop Images -->
-            <img
-                src="{{.Params.banner_light}}"
-                alt="logo"
-                class="hidden lg:block dark:hidden dark:lg:hidden lg:object-contain w-72 xl:w-96 mr-2"
-            />
-            <img
-                src="{{.Params.banner_dark}}"
 
-                alt="{{.Params.banner_alt}}"
-                class="hidden dark:lg:block lg:object-contain w-72 xl:w-96 mr-2"
-            />
-         </div>
-          <div class="flex flex-col gap-2 lg:flex-row text-sm text-center w-full justify-between px-2 pb-2">
-         {{ range .Site.Params.socials }}
-              <a href="{{index . "url"}}"
-                 class="block py-1.5 px-1 bg-blue-500 dark:bg-blue-600 hover:bg-blue-400 dark:hover:bg-blue-400 rounded-sm"><i class="{{index . "icon"}} mr-1"></i>{{index . "name"}}</a>
-              {{ end }}
-          </div>
-    </div>
+
 </div>
 {{ end }}
