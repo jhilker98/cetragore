@@ -1,21 +1,7 @@
 {{define "main"}}
 <div class="h-[85vh] flex space-x-evenly gap-3">
-    <div class="bg-white dark:bg-black w-1/2 rounded shadow-md flex flex-col h-auto">
-        <!-- image -->
-        <img src="{{.Params.banner_light}}" alt="" class="object-fill w-[70%] mx-auto flex-0 !mt-0 p-0"/>
-        <!-- Social Media Links -->
-          <div class="flex flex-col gap-2 lg:flex-row text-sm text-center w-full justify-between px-2 pb-2 mt-auto">
-              {{ range .Site.Params.socials }}
-              <a href="{{index . "url"}}"
-                 class="block py-1.5 px-1 bg-blue-500 dark:bg-blue-600 hover:bg-blue-400 dark:hover:bg-blue-400 rounded-sm"><i class="{{index . "icon"}} mr-1"></i>{{index . "name"}}</a>
-              {{ end }}
-          </div>
-    </div>
+  <div class="bg-white dark:bg-black w-full grid grid-cols-5 grid-cols-[ repeat(2, 1.3fr) 0.4fr ]">
+  </div>
 
-    <div class="bg-white dark:bg-black w-1/2 rounded shadow-md flex flex-col h-auto">
-        <div class="bg-red-500 dark:bg-blue-500">
-            <h1 class="text-center text-2xl">Calendar</h1>
-        </div>
-    </div>
 </div>
 {{ end }}
