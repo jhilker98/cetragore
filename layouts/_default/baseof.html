@@ -3,7 +3,7 @@
       x-data="{darkMode: false}"
       x-init="darkMode = JSON.parse(localStorage.getItem('darkMode')); $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))"
       :class="{'dark': darkMode === true}">
-    {{- partialCached "head.html" . -}}
+    {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
         <main class="prose prose-base prose-stone p-3 !max-w-none font-oswald dark:prose-invert">
