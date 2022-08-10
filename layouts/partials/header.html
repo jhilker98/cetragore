@@ -42,6 +42,9 @@
                 <a
                     href="{{.URL}}"
                     class="m-auto h-full p-4 transition-all duration-75 hover:bg-zinc-300 dark:hover:bg-cetblack-800 {{ if $active }}border-b-4 dark:border-malachite-500 border-malachite-600{{end}}"
+                  {{if .Params.target}}
+                  target = "{{.Params.target}}"
+                  {{end}}
                 >{{.Name}}</a>
 
             {{ end }}
