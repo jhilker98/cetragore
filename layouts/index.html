@@ -1,9 +1,10 @@
 {{define "main"}}
 <div class="h-[85vh] flex flex-col lg:flex-row space-x-evenly gap-3 lg:place-items-center">
   <div class="bg-white dark:bg-black w-full lg:w-3/5 lg:m-auto rounded shadow-md h-fit">
-    <img src="{{.Params.banner_light}}" alt="" class="object-contain w-3/5 lg:w-[70%] mx-auto p-0 !mt-0 dark:hidden"/>
-
-    <img src="{{.Params.banner_dark}}" alt="" class="object-contain w-3/5 lg:w-[70%] mx-auto p-0 !mt-0 hidden dark:block"/>
+    {{$bannerLight := resources.Get "/img/cetragore_greenblack.png"}}
+    {{$bannerDark := resources.Get "/img/cetragore_greenwhite.png"}}
+    <img src="{{$bannerLight.RelPermalink}}" alt="The band's logo, in green and black." class="object-contain w-3/5 lg:w-[70%] mx-auto p-0 !mt-0 dark:hidden"/>
+    <img src="{{$bannerDark.RelPermalink}}" alt="The band's logo, in green and white." class="object-contain w-3/5 lg:w-[70%] mx-auto p-0 !mt-0 hidden dark:block"/>
     <div class="flex flex-col lg:flex-row gap-2 justify-between">
       {{ range .Site.Params.socials }}
       <a href="{{index . "url"}}" class="text-sm p-2 bg-blue-500 block py-1.5 px-1 hover:bg-blue-600 dark:hover:bg-blue-600 rounded-sm text-center" target="_blank" rel="noreferrer">
