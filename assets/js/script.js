@@ -1,3 +1,3 @@
 const toggleMobileMenu = () => {
-    document.querySelector('#mobile-menu').classList.toggle('hidden');
+    document.querySelector('[role="mobile-menu"]').classList.toggle("hidden");
 }

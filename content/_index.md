@@ -1,7 +1,7 @@
 ---
 title: Home
 date: Sat Apr 2 2022 11:56:47 
-banner_light: "/img/cetragore_greenwhite.png"
+banner_light: "/img/cetragore_greenblack.png"
 banner_dark: "/img/cetragore_greenwhite.png"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Eu mi bibendum neque egestas congue quisque egestas diam. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Orci ac auctor augue mauris augue neque gravida in fermentum. Massa id neque aliquam vestibulum morbi blandit cursus risus. Dictum non consectetur a erat nam at lectus. Ultrices eros in cursus turpis massa tincidunt dui. Donec ac odio tempor orci dapibus ultrices in. Purus sit amet volutpat consequat mauris nunc congue nisi vitae.

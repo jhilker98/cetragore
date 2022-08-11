@@ -1,6 +1,8 @@
 <head>
   <title>
-    {{if not .IsHome}}
+    {{if .IsHome}}
+    {{.Site.Title}}
+    {{else}}
     {{.Page.Title}} - {{.Site.Title}}
     {{ end }}
   </title>
@@ -19,7 +21,8 @@
         crossorigin="anonymous" />
 
  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+ {{ $mainJs := resources.Get "js/script.js" }}
+ <script src="{{$mainJs.RelPermalink}}"></script>
  <!-- Dark Mode -->
  <script>
   if (localStorage.darkMode === 'true' || (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {

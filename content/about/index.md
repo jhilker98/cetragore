@@ -1,7 +1,6 @@
 ---
 title: "About The Band"
 date: 2022-06-09T12:54:27-04:00
-draft: true
 ---
 
 Cetragore is a death metal band from South Shore Massachusetts. Formed from the remnants of local bands "In Ash I Reign" (Erik and Marco) and "Dead By Dawn" (Steve and Jonny), with Steve on lead vocals guitar, Erik on bass, Jonny on drums and Marco on rhythm guitar in 2019, they are reminiscent of bands such as Death, Slayer and Cannibal Corpse with their breakneck grooves, punishing rhythm section and hair raising, guttural vocal assault. 
