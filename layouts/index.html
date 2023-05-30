@@ -1,18 +1,49 @@
 {{define "main"}}
-<div class="h-[85vh] flex flex-col lg:flex-row space-x-evenly gap-3 lg:place-items-center">
-  <div class="bg-white dark:bg-black w-full lg:w-3/5 lg:m-auto rounded shadow-md h-fit">
-    {{$bannerLight := resources.Get "/img/cetragore_greenblack.png"}}
-    {{$bannerDark := resources.Get "/img/cetragore_greenwhite.png"}}
-    <img src="{{$bannerLight.RelPermalink}}" alt="The band's logo, in green and black." class="object-contain w-3/5 lg:w-[70%] mx-auto p-0 !mt-0 dark:hidden"/>
-    <img src="{{$bannerDark.RelPermalink}}" alt="The band's logo, in green and white." class="object-contain w-3/5 lg:w-[70%] mx-auto p-0 !mt-0 hidden dark:block"/>
-    <div class="flex flex-col lg:flex-row gap-2 justify-between">
-      {{ range .Site.Params.socials }}
-      <a href="{{index . "url"}}" class="text-sm p-2 bg-blue-500 block py-1.5 px-1 hover:bg-blue-600 dark:hover:bg-blue-600 rounded-sm text-center" target="_blank" rel="noreferrer">
-        <i class="{{index . "icon"}} mr-1"> </i>{{index . "name"}}</a>
-      {{ end }}
-    </div>
-  </div>
-    </div>
-  </div>
-</div>
+<section class="grid place-items-center mt-2">
+        <div
+          class="flex flex-col lg:flex-row container bg-gray-200 dark:bg-cetblack-600 shadow rounded m-auto lg:m-0 items-center lg:items-start"
+        >
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%230B8043&ctz=America%2FNew_York&showNav=0&showPrint=0&showTabs=0&showCalendars=1&showDate=1&showTitle=0&mode=AGENDA&src=Y2V0cmFnb3JlQGdtYWlsLmNvbQ&color=%23039BE5"
+            style="border-width: 0;"
+            width="400"
+            height="400"
+            frameborder="0"
+            scrolling="no"
+            class="order-4 lg:order-none w-full lg:w-3/4"
+          ></iframe>
+          <div class="prose prose-sm lg:prose-base dark:prose-invert lg:p-3">
+            <h1 class="order-3 lg:order-none">Upcoming Shows</h1>
+            <p>{{.Content}}</p>
+          </div>
+        </div>
+      </section>
+<section class="mt-2 flex flex-col lg:flex-row gap-4 justify-between items-center mb-auto">
+
+  {{ range .Site.Data.members }}
+  <div
+          class="container max-w-md rounded shadow relative bg-red-100 mx-auto first:lg:ml-4 last:lg:mr-4"
+          x-data="{'hovered': false}"
+          @mouseover="hovered = !hovered"
+          @mouseout="hovered = !hovered"
+        >
+          <img
+            src="https://loremflickr.com/1200/798"
+            alt=""
+            class="object-cover h-full duration-200 transition-all"
+            :class="hovered === true ? 'grayscale-0' : 'grayscale'"
+          />
+          <div
+            class="absolute bottom-0 w-full text-sm h-8 bg-white grid place-items-center"
+          >
+            <p
+              class="text-center align-center font-bebasNeue text-lg uppercase"
+            >
+            {{ $instruments := index . "instruments"}}
+              {{index . "name"}} - {{delimit $instruments ", "}}
+            </p>
+          </div>
+        </div>
+  {{ end }}
+  </section>
 {{ end }}

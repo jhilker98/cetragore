@@ -1,0 +1,17 @@
+- name: Erik
+  instruments:
+    - Bass
+    - Vocals
+
+- name: Steve
+  instruments:
+    - Guitar
+    - Vocals
+
+- name: Marco
+  instruments:
+    - Guitar
+
+- name: Jonny
+  instruments:
+    - Drums
