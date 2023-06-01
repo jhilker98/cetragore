@@ -2,16 +2,31 @@
   instruments:
     - Bass
     - Vocals
+  image:
+    src: "img/erik.webp"
+    alt: "Erik playing the bass." 
 
 - name: Steve
   instruments:
     - Guitar
     - Vocals
+  image:
+    src: "img/steve.webp"
+    alt: "Steve playing and singing."
 
 - name: Marco
   instruments:
     - Guitar
+  image:
+    src: "img/marco.webp"
+    alt: "Marco shredding on guitar."
 
 - name: Jonny
   instruments:
     - Drums
+  image:
+    src: "img/jonny.webp"
+    alt: "Jonny playing the drums."
+    
+    
+    

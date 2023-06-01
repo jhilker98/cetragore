@@ -18,21 +18,24 @@
           </div>
         </div>
       </section>
-<section class="mt-2 flex flex-col lg:flex-row gap-4 justify-between items-center mb-auto">
+<section class="mt-4 flex flex-col lg:flex-row gap-4 justify-between items-center mb-auto">
 
   {{ range .Site.Data.members }}
   <div
-          class="container max-w-md rounded shadow relative bg-red-100 mx-auto first:lg:ml-4 last:lg:mr-4"
+          class="container max-w-md rounded shadow relative mx-auto first:lg:ml-4 last:lg:mr-4"
           x-data="{'hovered': false}"
           @mouseover="hovered = !hovered"
           @mouseout="hovered = !hovered"
         >
+        {{ with .image }}
+        {{ $image := resources.Get (string .src) }}
           <img
-            src="https://loremflickr.com/1200/798"
-            alt=""
+            src="{{$image.Permalink}}"
+            alt = "{{.alt}}"
             class="object-cover h-full duration-200 transition-all"
             :class="hovered === true ? 'grayscale-0' : 'grayscale'"
           />
+          {{ end }}
           <div
             class="absolute bottom-0 w-full text-sm h-8 bg-white grid place-items-center"
           >
@@ -41,6 +44,7 @@
             >
             {{ $instruments := index . "instruments"}}
               {{index . "name"}} - {{delimit $instruments ", "}}
+
             </p>
           </div>
         </div>
