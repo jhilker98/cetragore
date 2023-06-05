@@ -21,12 +21,15 @@ menus:
         target: _blank
 params:
   socials:
-    - url: 'https://www.facebook.com/CETRAGORE'
-      name: Facebook
-      icon: fab fa-facebook
-    - url: 'https://twitter.com/cetragore'
-      name: Twitter
-      icon: fab fa-twitter
+    - url: '#'
+      name: Spotify
+      icon: fab fa-spotify
+
     - url: 'https://instagram.com/cetragore'
       name: Instagram
       icon: fab fa-instagram
+
+    - url: 'https://www.facebook.com/CETRAGORE'
+      name: Facebook
+      icon: fab fa-facebook
+
