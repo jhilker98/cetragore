@@ -4,7 +4,7 @@
       x-init="darkMode = JSON.parse(localStorage.getItem('darkMode')); $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))"
       :class="{'dark': darkMode === true}">
     {{- partial "head.html" . -}}
-    <body>
+    <body x-data="{sidebarOpen: false}" class="bg-zinc-100 dark:bg-cetblack-800 min-h-screen antialiased">
         {{- partial "header.html" . -}}
         <main>
             {{ block "main" . }}
