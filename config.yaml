@@ -40,5 +40,6 @@ params:
     - url: "https://totaldeathcore.com/"
       name: "Total Deathcore"
 
-
+  banner_dark: "img/cetragore_greenwhite.webp"
+  banner_light: "img/cetragore_greenblack.webp"
     
