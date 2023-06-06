@@ -21,7 +21,7 @@ menus:
         target: _blank
 params:
   socials:
-    - url: '#'
+    - url: 'https://open.spotify.com/artist/6K4B8NOZoR3oVQRsu1jfxk?si=1u-6ChHRTpK-7fUhVBCOGQ'
       name: Spotify
       icon: fab fa-spotify
 
@@ -32,4 +32,19 @@ params:
     - url: 'https://www.facebook.com/CETRAGORE'
       name: Facebook
       icon: fab fa-facebook
+    
+    - url: 'https://www.bandcamp.com/CETRAGORE'
+      name: Bandcamp
+      icon: fab fa-bandcamp
 
+    - url: 'https://www.facebook.com/799535320424442/shop/all_products?sort_type=recency&on_sale=false&in_stock=false&ref_code=mini_shop_profile_plus_shop_tab_cta&ref_surface=mini_shop_product_details'
+      name: Merch
+      icon: fas fa-shopping-cart
+
+    - url: "https://totaldeathcore.com/"
+      name: "Total Deathcore"
+
+    - url: 'https://www.facebook.com/tombstonebooking?mibextid=ZbWKwL'
+      name: "Tombstone Booking"
+
+    
