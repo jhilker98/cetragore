@@ -6,14 +6,6 @@
     src: "img/erik.webp"
     alt: "Erik playing the bass." 
 
-- name: Steve
-  instruments:
-    - Guitar
-    - Vocals
-  image:
-    src: "img/steve.webp"
-    alt: "Steve playing and singing."
-
 - name: Marco
   instruments:
     - Guitar
