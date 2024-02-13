@@ -1,6 +1,6 @@
 baseURL: 'https://cetragore.com'
 languageCode: en-us
-title: We Are Cetragore
+title: For the Gore!
 build:
   writeStats: true
 menus:
