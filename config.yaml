@@ -36,9 +36,13 @@ params:
     - url: 'https://www.facebook.com/CETRAGORE'
       name: Facebook
       icon: fab fa-facebook
+
+    - url: 'https://www.tiktok.com/@cetragore'
+      name: Tiktok
+      icon: fab fa-tiktok
     
-    - url: "https://totaldeathcore.com/"
-      name: "Total Deathcore"
+    - url: "https://satellitetouring.com/"
+      name: "Satellite Touring"
 
   banner_dark: "img/cetragore_greenwhite.webp"
   banner_light: "img/cetragore_greenblack.webp"
